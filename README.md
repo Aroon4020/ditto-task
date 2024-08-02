@@ -35,8 +35,6 @@ forge test
 
 ### Project Structure
 
-src/: Contains the Solidity source files.
-test/: Contains the test files.
-lib/: Contains the dependencies.
-script/: Contains the scripts for deployment and other tasks.
-out/: Contains the compiled output files.
+src/: Contains the Solidity source files.<br>
+test/: Contains the test files.<br>
+lib/: Contains the dependencies.<br>
