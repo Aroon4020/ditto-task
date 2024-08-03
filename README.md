@@ -1,66 +1,42 @@
-## Foundry
+## Getting Started
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+To get started with this project, follow these steps:
 
-Foundry consists of:
+Clone the repository:
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
+```sh
+git clone https://github.com/Aroon4020/ditto-task.git
 ```
 
-### Test
+Navigate to the project directory:
 
-```shell
-$ forge test
+```sh
+cd ditto-task
 ```
 
-### Format
+Initialize the project:
 
-```shell
-$ forge fmt
+```sh
+forge init
 ```
 
-### Gas Snapshots
+Build the project:
 
-```shell
-$ forge snapshot
+```sh
+forge build
 ```
 
-### Anvil
+Run the tests:
 
-```shell
-$ anvil
+```sh
+forge test
 ```
 
-### Deploy
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
+### Project Structure
 
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+src/: Contains the Solidity source files.
+test/: Contains the test files.
+lib/: Contains the dependencies.
+script/: Contains the scripts for deployment and other tasks.
+out/: Contains the compiled output files.
