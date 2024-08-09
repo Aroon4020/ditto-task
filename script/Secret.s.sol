@@ -1,19 +1,26 @@
-// SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.11;
+// // SPDX-License-Identifier: UNLICENSED
+// pragma solidity 0.8.23;
 
-import {Script, console} from "forge-std/Script.sol";
-import {Secret} from "../src/Secret.sol";
+// import "forge-std/Script.sol";
+// import "../src/Workflow.sol";
 
-contract SecretScript is Script {
-    Secret public secret;
+// contract ActivateWorkflowScript is Script {
+//     function run() external {
+//         // Define the workflow parameters
+//         uint256 workflowKey = 1;
+//         uint256 maxGasPrice = 50 gwei;
+//         uint256 maxGasLimit = 500000;
 
-    function setUp() public {}
+//         // Address of the deployed Workflow contract on Holesky
+//         Workflow workflow = Workflow(payable(0x08BbE5e9149b60cFEe9eb2726463060F0F2A897F));
 
-    function run() public {
-        vm.startBroadcast();
+//         // Start broadcasting (signing and sending transactions)
+//         vm.startBroadcast();
 
-        secret = new Secret();
+//         // Call the activate function on the Workflow contract
+//         workflow.withdraw();
 
-        vm.stopBroadcast();
-    }
-}
+//         // Stop broadcasting
+//         vm.stopBroadcast();
+//     }
+// }
